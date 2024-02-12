@@ -33,7 +33,7 @@ export default function App() {
   return (
     <div>
       <header>
-        <img src="react-logo-xs.png" alt="React logo" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React logo" />
         <div>
           <h1>React.js</h1>
           <p>i.e., using the React library for rendering the UI</p>
