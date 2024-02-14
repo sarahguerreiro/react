@@ -1,0 +1,46 @@
+Em javascript ha duas formas principais de importar/exportar modulos ou funcionalidades de outros arquivos:
+
+// a importação padrão:
+    import function minhaFuncao from './modulo';
+
+// exportação padrão:
+    export default function minhaFuncao() {
+        console.log("isso é uma funcao exportada!")
+    }
+
+
+// a importação nomeada:
+    import {outraFuncao} from './modulo';
+
+// exportação nomeada:
+    export function outraFuncao() {
+        console.log("isso é outra função exportada")
+    }
+
+
+Vc pode combinar exportações padrões com nomeadas, desde que vc nao tenha mais de uma exportação padrão.
+
+   export default "nus12a4dhad0ss646";
+   export let apiKey = "had70ssu5daios654d";
+   export let abc = "abcedário";
+
+E quando vc estiver precisando importar varias coisas do mesmo arquivo, caso essas coisas sejam exportadas como exportações nomeadas, ou seja, sem a palavra-chave default, em vez de listar todos os itens que deseja importar, fazer uma lista, separadas por virgulas entre chaves:
+
+    import {apiKey, abc} from './util.js';
+    console.log(apiKey)
+
+
+Mas vc tbm pode importa-los agrupando-os em um objeto javascript. Depois da palavra reservada import vc terá um asterístico, depois a palavra-chave as e, em seguida,  qualquer nome de sua escolha (como util, por ex) e, novamente, o caminho para o arquivo do qual vc deseja importar, assim:
+
+    import * as util from "./main.js"
+
+Com isso, todas as coisas fornecidas pelo main.js seriam agrupadas nesse objeto e, portanto, vc poderia acessa-lo com a notação de objeto js padrão, usando o nome especifico do qual vc deseja acessar + a notação de ponto para acessar o objeto especifico desejado e ate a exportação padrão:
+
+    console.log(util.apiKey);
+    console.log(util.abc);
+    console.log(util.default);
+
+
+Como ultima observação a palavra-chave as tbm pode ser usada para atribuir  apelidos ao nomes das importações/exportações nomeadas que porventura vc não esteja satisfeito. Por exemplo, digamos que vc queira trocar o nome da variavel abc, a maneira correta é usando a palavra-chave as logo apos o nome da var que deseja alterar o nome e em seguida colocar o nome desejado:
+
+    import { apiKey, abc as content } from "./main.js"

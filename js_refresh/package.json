@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "estudando sintaxe de importacao",
   "main": "main.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
