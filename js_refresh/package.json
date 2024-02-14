@@ -1,0 +1,22 @@
+{
+  "name": "js_refresh",
+  "version": "1.0.0",
+  "description": "estudando sintaxe de importacao",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahguerreiro/react.git"
+  },
+  "keywords": [
+    "import"
+  ],
+  "author": "sarah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarahguerreiro/react/issues"
+  },
+  "homepage": "https://github.com/sarahguerreiro/react#readme"
+}
