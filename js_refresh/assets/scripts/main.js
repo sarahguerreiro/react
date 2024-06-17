@@ -16,8 +16,13 @@ usando o export sem o default, vc pode exportar quantascoisas quiser, ou seja, p
 vc pode ainda criar a chamada exportação padrão, adicionando a palavra-chave default apos a palavra reservada export seguido do valor da função/variavel/class/wtv que vc quiser exportar:
 */
 
-export default 'basd64bajs5hasdb16';
+// export default 'basd64bajs5hasdb16';
 
 /*
 ao adicionar a palavra chave default, vc esta dizendo q o valor passado aqui deve ser o padrão exportado por esse arquivo. Se vc optar pela exportação padrão, lembre-se que vc so pode ter uma exportação padrão/arquivo.
 */
+
+import arrowFunctions from "../scripts/arrowFunctions";
+
+const result = arrowFunctions('Anderson', 'diz oi')
+console.log(result)
